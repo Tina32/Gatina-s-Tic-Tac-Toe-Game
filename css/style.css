@@ -1,38 +1,37 @@
-h1{
-  color: red;
-  font: georgia;
+h1 {
+    color: red;
+    font: georgia;
 }
 
-body{
+body {}
 
-
-}
-
-.gameboard{
-  width: 330px;
-  height: 320px;
-  border-color: Red;
-  border-style: solid;
-}
-.row1{
-  height: 101px;
-  border-color: blue;
-  border-style: solid;
-}
-.row2{
-  height: 101px;
-  border-color: blue;
-  border-style: solid;
-}
-.row3{
-  height: 101px;
-  border-color: blue;
-  border-style: solid;
+.gameboard {
+    width: 330px;
+    height: 320px;
+    border-color: Red;
+    border-style: solid;
 }
 
-.cell1{
-  height: 100px;
-  border-color: blue;
-  border-style: solid;
+.row1 {
+    height: 101px;
+    border-color: blue;
+    border-style: solid;
 }
 
+.row2 {
+    height: 101px;
+    border-color: blue;
+    border-style: solid;
+}
+
+.row3 {
+    height: 101px;
+    border-color: blue;
+    border-style: solid;
+}
+
+.cell1 {
+    height: 100px;
+    border-color: blue;
+    border-style: solid;
+}
