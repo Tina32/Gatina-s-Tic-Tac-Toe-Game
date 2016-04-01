@@ -1,37 +1,19 @@
-h1 {
-    color: red;
-    font: georgia;
+body {
+    font-size: 10px;
 }
 
-body {}
-
-.gameboard {
-    width: 330px;
-    height: 320px;
-    border-color: Red;
-    border-style: solid;
+#gameboard {
+    width: 31.2em;
+    width: 31.2em;
+    margin: 0 auto;
 }
 
-.row1 {
-    height: 101px;
-    border-color: blue;
-    border-style: solid;
+.cell {
+    border: red solid 1px;
+    width: 10em;
+    height: 10em;
+    display: inline-block;
 }
 
-.row2 {
-    height: 101px;
-    border-color: blue;
-    border-style: solid;
-}
+.row {}
 
-.row3 {
-    height: 101px;
-    border-color: blue;
-    border-style: solid;
-}
-
-.cell1 {
-    height: 100px;
-    border-color: blue;
-    border-style: solid;
-}
