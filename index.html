@@ -12,36 +12,39 @@
 </head>
 
 <body>
-    <h1> Tic-Tac-Toe</h1>
+
     <!-- <img src="https://images5.alphacoders.com/527/527357.jpg"> -->
     <section id="scoreBoard">
-    <h2> Score Board</h2>
-        Player X : <div id="score_x"></div>
-        Ties : <div id="score_tie"></div>
-        Player O : <div id="score_o"></div>
-
+        <h2> Score Board</h2>
+            Player X : <div id="score_x"></div>
+            Ties : <div id="score_tie"></div>
+            Player O : <div id="score_o"></div>
+        <h3> Thanks For Playing! </h3>
     </section>
-    <section id="gameBoard">
-        <section class="row">
-            <div class="cell" id="0"></div>
-            <div class="cell" id="1"></div>
-            <div class="cell" id="2"></div>
+    <div id="gameBox">
+        <h1> Tic-Tac-Toe</h1>
+        <section id="gameBoard">
+            <section class="row">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+            </section>
+            <section class="row">
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+            </section>
+            <section class="row">
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </section>
         </section>
-        <section class="row">
-            <div class="cell" id="3"></div>
-            <div class="cell" id="4"></div>
-            <div class="cell" id="5"></div>
+        <section id="gameStuff">
+            <button id="newgame" type="button">New Game</button>
         </section>
-        <section class="row">
-            <div class="cell" id="6"></div>
-            <div class="cell" id="7"></div>
-            <div class="cell" id="8"></div>
-        </section>
-    </section>
-    <section id="gameStuff">
-        <button id="newgame" type="button">New Game</button>
-    </section>
     <footer>Gatina Foy &copy 2016</footer>
+    </div>
 </body>
 
 </html>
