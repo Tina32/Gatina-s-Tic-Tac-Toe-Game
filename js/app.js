@@ -4,7 +4,13 @@ $(document).ready(function() {
     var moves = ["", "", "", "", "", "", "", "", ""];
     var count = 0;
     var turn = 'X';
-    //var champ = null;
+    var Xscore = 0;
+    var Oscore = 0;
+    var Ties = 0;
+    var champ = null;
+    $('#score_x').text(Xscore);
+    $('#score_tie').text(Ties);
+    $('#score_o').text(Oscore);
 
     var startGame = function() {
         console.log(moves);
@@ -18,6 +24,7 @@ $(document).ready(function() {
 
             turn = (turn == 'X') ? 'O' : 'X';
 
+
             // if (count % 2 == 0){
             //  turn = 'X';
             // } else {
@@ -29,18 +36,29 @@ $(document).ready(function() {
 
 
             var getWinner = function() {
-                if (winnerIs('X')) {
+                if (winnerIs('X', 'addscore')) {
                     alert('Player X wins! Start a new game!');
+                    Xscore++;
+                    $('div').off('click');
+                    // $('#Xscore').html('<div id='score_x'></div>');
+                    // console.log(Xscore);
                 }
-                if (winnerIs('O')) {
+                if (winnerIs('O', 'addscore')) {
                     alert('Player O wins Start a new game!');
+                    Oscore++;
+                    $('div').off('click');
+                    console.log(Oscore);
+                    // if (true) {}
+
                 } else {
                     return null;
                 }
             }
 
-            var winnerIs = function(turn) {
+            var winnerIs = function(turn, score) {
                 return winsRow(turn) || winsCol(turn) || winsDiag(turn);
+                //update score of games
+                //updatescore(score)
             }
 
             var winsRow = function(turn) {
@@ -57,7 +75,16 @@ $(document).ready(function() {
             }
 
             var winner = getWinner();
+            $('#score_x').text(Xscore);
+            $('#score_tie').text(Ties);
+            $('#score_o').text(Oscore);
 
+            // var updateScore = function(){
+            //   //calulate the score
+            //   //update the score div
+            //   //call this function from winnerIs
+            //   //keep track of how many wins
+            // }
         });
     }
     startGame();
@@ -69,6 +96,9 @@ $(document).ready(function() {
         console.log(moves);
         console.log(count);
         console.log(turn);
+        console.log(Xscore);
+        console.log(Oscore);
+        console.log(Ties);
         $gameCells.html('');
     };
 

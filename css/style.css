@@ -23,13 +23,16 @@ h2{
 }
 
 #scoreBoard {
-    /*color: red;*/
-    /*border-width: 10px;*/
+    color: white;
+    width: 500px;
     margin: 0 auto;
-    align: center;
-    border: black solid 2px;
-    text-align: center;
+    /*align: left;*/
+    /*border: black solid 2px;*/
+    text-align: left;
     height: 200px;
+    display: inline-block;
+
+
 
 
 }
@@ -41,6 +44,7 @@ h2{
     animation-fill-mode: forwards;
     background-color: white;
     opacity: .4;
+    display: inline-block;
 }
 
 .cell {
