@@ -7,6 +7,9 @@ $(document).ready(function() {
     //var champ = null;
 
     var startGame = function() {
+        console.log(moves);
+        console.log(count);
+        console.log(turn);
         $($gameCells).one('click', function() {
             $(this).html(turn);
             moves[this.id] = turn;
@@ -27,10 +30,10 @@ $(document).ready(function() {
 
             var getWinner = function() {
                 if (winnerIs('X')) {
-                    alert('Player X wins!');
+                    alert('Player X wins! Start a new game!');
                 }
                 if (winnerIs('O')) {
-                    alert('Player O wins!');
+                    alert('Player O wins Start a new game!');
                 } else {
                     return null;
                 }
@@ -60,10 +63,12 @@ $(document).ready(function() {
     startGame();
     var reset = function() {
         $($gameCells).off('click');
-        var moves = ["", "", "", "", "", "", "", "", ""];
-        var count = 0;
-        var turn = 'X';
-
+        moves = ["", "", "", "", "", "", "", "", ""];
+        count = 0;
+        turn = 'X';
+        console.log(moves);
+        console.log(count);
+        console.log(turn);
         $gameCells.html('');
     };
 
