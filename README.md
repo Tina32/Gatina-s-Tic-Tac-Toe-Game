@@ -21,3 +21,5 @@ This game is pretty simple and user friendly. The user will either be 'X' or 'O'
 **Wire Frame**: https://trello.com/b/A5r7Wrf3/tic-tac-toe
 
 https://trello.com/b/A5r7Wrf3/tic-tac-toe
+
+## Thanks for Playing!
