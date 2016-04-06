@@ -1,9 +1,11 @@
 ## Tic Tac Toe Project
 
 
-This game is pretty simple and user friendly.
+This game is pretty simple and user friendly. The user will either be 'X' or 'O' then try and get 3 in a row to win the game. After each round, the player can then reset the game to start over.
 
-**The technologies used are:**
+
+
+**Technologies used are:**
  HTML,
  CSS  (including animation),
  JavaScript and
@@ -16,5 +18,6 @@ This game is pretty simple and user friendly.
 
 **Project Link**: http://tina32.github.io/Gatina-s-Tic-Tac-Toe-Game
 
-**Wire Frames**: https://trello.com/b/A5r7Wrf3/tic-tac-toe
+**Wire Frame**: https://trello.com/b/A5r7Wrf3/tic-tac-toe
+
 https://trello.com/b/A5r7Wrf3/tic-tac-toe
