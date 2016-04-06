@@ -18,7 +18,14 @@ $(document).ready(function() {
         console.log(turn);
         $($gameCells).one('click', function() {
             $(this).html(turn);
+            // if (turn == 'X') {
+            //   $(this).addClass('xImgClass')
+            // }
+            // else {
+            //   $(this).addClass('yImgClass')
+            // }
             moves[this.id] = turn;
+            //this.atrr(img src)
 
             count++;
 
@@ -30,10 +37,7 @@ $(document).ready(function() {
             // } else {
             //  turn = 'O';
             // }
-
-            // console.log(moves, count, turn);
             console.log(moves, count, turn);
-
 
             var getWinner = function() {
                 if (winnerIs('X', 'addscore')) {
