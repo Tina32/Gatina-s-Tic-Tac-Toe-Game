@@ -1,7 +1,7 @@
 ## Tic Tac Toe Project
 
 
-This game is pretty simple and user friendly. The user will either be 'X' or 'O' then try and get 3 in a row to win the game. After each round, the player can then reset the game to start over.
+This game is pretty simple and user friendly. The user will either be 'X' or 'O' then try and align 3 in a row to win the game. After each round, the player can then reset the game to start over.
 
 
 
